@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleAppTarde
+﻿namespace ConsoleAppTarde
 {
-    internal class Class1
+    public class Produto
     {
+        private int Id;
+        private string Name;
+        private decimal Value;
+
+        public Produto(int id, string name, decimal value)
+        {
+            Id = id;
+            Name = name;
+            Value = value;
+        }
     }
 }
