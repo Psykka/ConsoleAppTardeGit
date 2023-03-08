@@ -12,5 +12,20 @@
             Name = name;
             Value = value;
         }
+
+        public int GetId ()
+        {
+            return Id;
+        }
+
+        public string GetName()
+        {
+            return Name;
+        }
+
+        public decimal GetValue()
+        {
+            return Value;
+        }
     }
 }
