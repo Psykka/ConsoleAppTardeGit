@@ -1,12 +1,12 @@
 ﻿namespace ConsoleAppTarde
 {
-    public class Produto
+    public class Product
     {
         private int Id;
         private string Name;
         private decimal Value;
 
-        public Produto(int id, string name, decimal value)
+        public Product(int id, string name, decimal value)
         {
             Id = id;
             Name = name;
@@ -26,6 +26,24 @@
         public decimal GetValue()
         {
             return Value;
+        }
+
+        public void SetId (int id)
+        {
+            Id = id;
+        }
+
+        public void SetName(string name)
+        {
+            Name = name;
+        }
+
+        public void SetValue(decimal value)
+        {
+            if (value > 0)
+            {
+                Value = value;
+            }
         }
     }
 }
